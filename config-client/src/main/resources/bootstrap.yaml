@@ -3,4 +3,5 @@ spring:
     name: config-client
   cloud:
     config:
-      uri:
+      discovery:
+        service-id: config-center-server

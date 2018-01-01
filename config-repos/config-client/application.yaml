@@ -5,3 +5,5 @@ eureka:
     service-url:
         defaultZone: http://peer1:9091/eureka/
     fetch-registry: false
+# 检查配置中心是否生效
+name: doge
