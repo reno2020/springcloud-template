@@ -1,0 +1,7 @@
+server:
+  port: 9102
+eureka:
+  client:
+    service-url:
+        defaultZone: http://peer1:9091/eureka/
+    fetch-registry: false

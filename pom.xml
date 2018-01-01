@@ -8,6 +8,7 @@
     <modules>
         <module>config-center-server</module>
         <module>eureka-registry-center</module>
+        <module>config-client</module>
     </modules>
     <name>springcloud-template</name>
     <properties>
