@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-registry-center
+server:
+  port: 9091
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+         defaultZone: http://peer2:9092/eureka/
+  instance:
+    hostname: peer1
