@@ -8,9 +8,12 @@ spring:
       server:
         git:
           uri: https://github.com/zjcscut/springcloud-template
-          search-paths: config-repos
+          search-paths: config-repos/config-client,config-repos/config-client-b
 eureka:
   client:
     service-url:
         defaultZone: http://peer1:9091/eureka/
     fetch-registry: false
+management:
+  security:
+    enabled: false

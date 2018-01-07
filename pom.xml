@@ -9,11 +9,14 @@
         <module>config-center-server</module>
         <module>eureka-registry-center</module>
         <module>config-client</module>
+        <module>microservice-user-center</module>
+        <module>microservice-user-consumer-rest-ribbon</module>
     </modules>
     <name>springcloud-template</name>
     <properties>
         <springcloud.version>Edgware.RELEASE</springcloud.version>
         <springboot.version>1.5.9.RELEASE</springboot.version>
+        <lombok.version>1.16.18</lombok.version>
         <jdk.version>1.8</jdk.version>
         <encoding>UTF-8</encoding>
         <mvn.compiler.version>3.7.0</mvn.compiler.version>
@@ -30,6 +33,13 @@
             </dependency>
 
             <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${springboot.version}</version>
@@ -41,6 +51,12 @@
     </dependencyManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
     <build>
