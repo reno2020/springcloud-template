@@ -11,6 +11,7 @@
         <module>config-client</module>
         <module>microservice-user-center</module>
         <module>microservice-user-consumer-rest-ribbon</module>
+        <module>microservice-user-consumer-feign</module>
     </modules>
     <name>springcloud-template</name>
     <properties>

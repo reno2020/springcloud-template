@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+        defaultZone: http://peer1:9091/eureka/
+spring:
+  application:
+    name: microservice-user-consumer-hystrix-dashboard
+server:
+  port: 9107
+feign:
+  hystrix:
+    enabled: true
+

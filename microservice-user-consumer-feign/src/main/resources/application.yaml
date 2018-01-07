@@ -1,0 +1,9 @@
+eureka:
+  client:
+    service-url:
+        defaultZone: http://peer1:9091/eureka/
+spring:
+  application:
+    name: microservice-user-consumer-feign
+server:
+  port: 9105
